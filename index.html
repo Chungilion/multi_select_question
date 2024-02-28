@@ -214,5 +214,15 @@ a{color:inherit;text-decoration:none}
             </div>
         </div>
     </div>
+    <script>
+    const switchers = [...document.querySelectorAll('.switcher')]
+
+    switchers.forEach(item => {
+        item.addEventListener('click', function() {
+            switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+            this.parentElement.classList.add('is-active')
+        })
+    })
+    </script>
 </body>
 </html>
