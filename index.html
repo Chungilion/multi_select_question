@@ -61,6 +61,13 @@
     to {transform: scale(1)}
   } 
 </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
  <!-- Button to open the modal login form -->
  <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
@@ -93,4 +100,17 @@
        <span class="psw">Forgot <a href="#">password?</a></span>
      </div>
    </form>
- </div> 
+ </div>
+ <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script> 
+</body>
+</html>
